@@ -1,0 +1,16 @@
+.list {
+  list-style: none;
+  width: 265px;
+  padding: 20px;
+  background-color: #9ae01936;
+  border: 1px solid #619600e7;
+  border-radius: 10px;
+}
+.delete_contact {
+  padding: 5px 15px;
+  font-size: 14px;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  outline: 1px solid black;
+}
