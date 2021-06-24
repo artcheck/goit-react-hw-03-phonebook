@@ -16,7 +16,6 @@ class App extends Component {
   };
 
   componentDidMount() {
-    console.log("[componentDidMount]");
     const contacts = localStorage.getItem("contacts");
     if (contacts) {
       const parsedContacts = JSON.parse(contacts);
@@ -25,12 +24,10 @@ class App extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log("[componentDidUpdate]");
     if (prevState.contacts !== this.state.contacts) {
       localStorage.setItem("contacts", JSON.stringify(this.state.contacts));
     }
   }
- 
 
   handleSubmit = (name, number) => {
     const isDuplicate = this.state.contacts.some((item) => item.name === name);
